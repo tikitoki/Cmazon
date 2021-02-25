@@ -1,0 +1,111 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(50, 50, 50, 1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo-link {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  float: none;
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-decoration: none;
+  padding: 1px 8px 0 6px;
+  margin: 1px;
+}
+
+.header-logo {
+  position: relative;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-logo-sprite {
+  background: url("cmazon-nav-sprite.png") no-repeat -14px -39px;
+  width: 98px;
+  height: 29px;
+}
+
+.header-search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.header-search-input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.header-search-icon {
+  color: white;
+  background-color: #cd9042;
+  padding: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.header-nav {
+  display: flex;
+  color: white;
+  .header-option {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    max-width: 120px;
+    .header-option-lineone {
+      font-size: 12px;
+      margin-top: 7px;
+      max-width: 120px;
+      overflow-x: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .header-option-linetwo {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .nav-cart {
+      display: flex;
+      flex-flow: row;
+      align-items: flex-end;
+      margin-right: 10px;
+      padding: 10px;
+    }
+    .header-option-cart-count {
+      position: absolute;
+      font-weight: bold;
+      color: #f08804;
+      left: 37px;
+      top: 13px;
+    }
+    .header-option-cart {
+      display: flex;
+      background: url("cmazon-nav-sprite.png") no-repeat -16px -328px;
+      width: 38px;
+      height: 26px;
+    }
+  }
+}

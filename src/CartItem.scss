@@ -1,0 +1,25 @@
+.cart-item {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+  }
+  .cart-item-info {
+    display: flex;
+    flex-direction: column;
+    .cart-item-title {
+      font-weight: 700;
+      max-height: 180px;
+      overflow: hidden;
+    }
+    button {
+      background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+      width: 200px;
+      height: 30px;
+      border: 1px solid;
+    }
+  }
+}
